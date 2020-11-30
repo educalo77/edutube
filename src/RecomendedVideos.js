@@ -12,16 +12,57 @@ function RecomendedVideos() {
                     channel="Sonny Sangha"
                     views="2.3M views"
                     timestamp="3 days ago"
+                    image="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                    channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
                 />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
-                <VideoCard />
+                <VideoCard
+                    title="Become a web developer in 10 minutes"
+                    channel="Sonny Sangha"
+                    views="2.3M views"
+                    timestamp="3 days ago"
+                    image="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                    channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                />
+                <VideoCard
+                    title="Become a web developer in 10 minutes"
+                    channel="Sonny Sangha"
+                    views="2.3M views"
+                    timestamp="3 days ago"
+                    image="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                    channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                />
+                <VideoCard
+                    title="Become a web developer in 10 minutes"
+                    channel="Sonny Sangha"
+                    views="2.3M views"
+                    timestamp="3 days ago"
+                    image="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                    channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                />
+                <VideoCard
+                    title="Become a web developer in 10 minutes"
+                    channel="Sonny Sangha"
+                    views="2.3M views"
+                    timestamp="3 days ago"
+                    image="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                    channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                />
+                <VideoCard
+                    title="Become a web developer in 10 minutes"
+                    channel="Sonny Sangha"
+                    views="2.3M views"
+                    timestamp="3 days ago"
+                    image="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                    channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                />
+                <VideoCard
+                    title="Become a web developer in 10 minutes"
+                    channel="Sonny Sangha"
+                    views="2.3M views"
+                    timestamp="3 days ago"
+                    image="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                    channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
+                />
             </div>
         </div>
     )
