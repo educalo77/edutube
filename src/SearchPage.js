@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import './SearchPage.css';
 import TuneIcon from '@material-ui/icons/Tune';
 import ChannelRow from './ChannelRow';
@@ -27,6 +27,10 @@ function SearchPage() {
         console.log(response.data.items)
     };
 
+    const selected = (video) => {
+        setState({ selectedVideo: video });
+    }
+
     useEffect(() => {
         data(params.searchTerm)
     }, [params.searchTerm])
@@ -48,6 +52,7 @@ function SearchPage() {
             /> */}
             {state.videos && state.videos.map((video) => {
                 return (
+            <Link to={`/video/${video.id.videoId}`}>
             <VideoRow
                 image={`${video.snippet.thumbnails.high.url}`}
                 channel={`${video.snippet.channelTitle}`}
@@ -56,7 +61,9 @@ function SearchPage() {
                 title={`${video.snippet.title}`}
                 view="1M"
                 description={`${video.snippet.description}`}
-            />  )
+            />
+            </Link>  
+            )
             })}
 
             <hr />

@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import './RecomendedVideos.css';
 import youtube from './api/youtube';
 import VideoCard from './VideoCard';
@@ -31,6 +32,7 @@ function RecomendedVideos() {
             <div className="recomendedVideos_videos">
                 {state.videos.map((video) => {
                     return (
+                    <Link to={`/video/${video.id.videoId}`}>
                   <VideoCard
                     views="2.3M views"
                     channelImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Youtube.png"
@@ -40,7 +42,8 @@ function RecomendedVideos() {
                     subs="659"
                     title={`${video.snippet.title}`}
                     description={`${video.snippet.description}`}
-                />                      
+                />
+                    </Link>                      
                     )
                 })}
                 {/* <VideoCard
