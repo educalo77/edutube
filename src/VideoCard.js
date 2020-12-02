@@ -2,7 +2,7 @@ import React from 'react';
 import './VideoCard.css';
 import Avatar from '@material-ui/core/Avatar';
 
-function VideoCard({image, title, channel, views, timestamp, channelImage}) {
+function VideoCard({image, title, channel, description, timestamp, channelImage}) {
     return (
         <div className="videoCard">
             <img
@@ -19,7 +19,7 @@ function VideoCard({image, title, channel, views, timestamp, channelImage}) {
                     <h4>{title}</h4>
                     <p>{channel}</p>
                     <p>
-                        {views} | {timestamp}
+                        {description} | {timestamp}
                     </p>
                 </div>
             </div>

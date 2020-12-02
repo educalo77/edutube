@@ -1,3 +1,8 @@
 .app_page {
     display: flex;
 }
+
+.app_header_swich {
+    position: absolute;
+    left: 94%;
+}

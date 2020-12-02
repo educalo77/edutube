@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './Sidebar.css';
 import SidebarRow from './SidebarRow';
 import HomeIcon from '@material-ui/icons/Home';
@@ -10,10 +10,18 @@ import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
 import WatchLaterIcon from '@material-ui/icons/WatchLater';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { ThemeContext } from './App';
+
 
 function Sidebar() {
+
+    const darkTheme = useContext(ThemeContext);
+    const themeStyles = {
+        backgroundColor: darkTheme ? '#111' : '#CCC',
+        color: darkTheme ? '#CCC' : '#111',
+    }
     return (
-        <div className="sidebar">
+        <div className="sidebar" style={themeStyles} >
             <SidebarRow selected Icon={HomeIcon} title="Home" />
             <SidebarRow Icon={WhatshotIcon} title="Trending" />
             <SidebarRow Icon={SubscriptionsIcon} title="Subscription" />

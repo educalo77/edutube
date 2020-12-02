@@ -1,19 +1,32 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { useParams } from 'react-router-dom';
+import './VideoPlay.css';
+import SearchPage from './SearchPage';
+import ThemeContext from './App';
 
 function VideoPlay() {
 
     const params = useParams();
-
-    console.log(params.videoId)
-
+    
     const videoSrc = `https://www.youtube.com/embed/${params.videoId}`;
 
-    console.log(videoSrc)
+    const darkTheme = useContext(ThemeContext);
+    const themeStyles = {
+        backgroundColor: darkTheme ? '#111' : '#CCC',
+        color: darkTheme ? '#CCC' : '#111',
+    }
 
     return (
-        <div>
-            <iframe src={videoSrc} allowFullScreen title="Video Player" frameborder="0" allow="autoplay; encrypted-media" />
+        <div className="videoPlay" style={themeStyles} >
+            <div className="videoPlay_iframe_title">
+            <iframe
+                className="videoPlay_iframe"
+                src={videoSrc}
+                allowFullScreen
+                title="Video Player"
+            />
+            </div>
+            <SearchPage search={"heavy-metal"} />
         </div>
     )
 }

@@ -1,7 +1,6 @@
 .videoCard {
     margin-bottom: 40px;
     width: 270px;
-
 }
 
 .videoCard_thumbnail {
@@ -13,6 +12,7 @@
     display: flex;
     margin-top: 10px;
     padding-right: 30px;
+    color: rgb(134, 5, 5);
 }
 
 .videoCard_text {
