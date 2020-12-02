@@ -4,7 +4,6 @@ import youtube from './api/youtube';
 import VideoCard from './VideoCard';
 import './RecomendedVideos.css';
 
-
 function RecomendedVideos({darkTheme}) {
 
     const [state, setState] = useState({
@@ -30,6 +29,7 @@ function RecomendedVideos({darkTheme}) {
  
     };
 
+    
     const themeStyles = {
         backgroundColor: darkTheme ? '#111' : '#CCC',
         color: darkTheme ? '#CCC' : '#111',
