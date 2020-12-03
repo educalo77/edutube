@@ -1,16 +1,16 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import './VideoPlay.css';
 import SearchPage from './SearchPage';
-import ThemeContext from './App';
 
-function VideoPlay() {
+function VideoPlay({ darkTheme }) {
+    
+    console.log(darkTheme)
 
     const params = useParams();
     
     const videoSrc = `https://www.youtube.com/embed/${params.videoId}`;
 
-    const darkTheme = useContext(ThemeContext);
     const themeStyles = {
         backgroundColor: darkTheme ? '#111' : '#CCC',
         color: darkTheme ? '#CCC' : '#111',
@@ -18,7 +18,7 @@ function VideoPlay() {
 
     return (
         <div className="videoPlay" style={themeStyles} >
-            <div className="videoPlay_iframe_title">
+            <div className="videoPlay_iframe_title" style={themeStyles}>
             <iframe
                 className="videoPlay_iframe"
                 src={videoSrc}

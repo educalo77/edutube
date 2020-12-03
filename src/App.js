@@ -36,7 +36,6 @@ function App() {
          <Swich
             defaultChecked
             onChange={toggleTheme}
-            color="default"
             inputProps={{ 'aria-label': 'checkbox with default color' }}
         />
         </div>
@@ -44,7 +43,7 @@ function App() {
           <Route path="/video/:videoId">
           <div className="app_page">
           <Sidebar />
-          <VideoPlay />
+          <VideoPlay darkTheme= {darkTheme} />
            </div>
           </Route>
           <Route path="/search/:searchTerm">
